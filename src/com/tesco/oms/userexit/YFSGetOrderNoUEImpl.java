@@ -83,6 +83,13 @@ public class YFSGetOrderNoUEImpl implements YFSGetOrderNoUE {
         } catch (SQLException throwables) {
             System.out.println("YFSGetOrderNoUEImpl: exception while parsing resultSet");
         }
+        try {
+            rs.close();
+            connection.close();
+            preparedStatement.close();
+        } catch (Exception ex) {
+            System.out.println("YFSGetOrderNoUEImpl: exception closing connection");
+        }
         return orderNo;
     }
 }

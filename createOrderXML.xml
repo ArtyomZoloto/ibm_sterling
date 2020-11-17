@@ -1,0 +1,20 @@
+<Order CustomerEMailID="user@yantra.com" DocumentType="0001" DraftOrderFlag="N" EnterpriseCode="TESCO GR" EntryType="DIRECT API" OrderDate="2020-10-14" OrderNo="111" SellerOrganizationCode="TESCO GR">
+    <OrderLines>
+        <OrderLine DeliveryMethod="SHP" IsFirmPredefinedNode="Y" ItemGroupCode="PROD" OrderedQty="2" PrimeLineNo="1" ReqShipDate="2020-10-28" ShipNode="Premier_node" SubLineNo="1">
+            <Extn>
+                <ExtnLineCouponList>
+                    <ExtnLineCoupon ExtnCouponCode="123" ExtnCouponName="SALE" ExtnCouponPercent="30" ExtnExpirationDate="2020-11-01" ExtnOrderLineKey="202010141522008210"></ExtnLineCoupon>
+                    <ExtnLineCoupon ExtnCouponCode="345" ExtnCouponName="BIRTHDAY" ExtnCouponPercent="15" ExtnExpirationDate="2020-12-13" ExtnOrderLineKey="202010141522008210"></ExtnLineCoupon>
+                </ExtnLineCouponList>
+            </Extn>
+            <Item ItemDesc="book!" ItemID="Book123" ItemShortDesc="book short desc" ProductClass="GOOD" UnitOfMeasure="EACH"/>
+            <LinePriceInfo IsPriceLocked="Y" UnitPrice="20"/>
+        </OrderLine>
+    </OrderLines>
+    <PriceInfo Currency="USD"/>
+    <PersonInfoBillTo AddressLine1="George Bush street" AddressLine2="65" AddressLine3="flat 417" AddressLine4="" City="Washington" Country="USA" DayPhone="+1-800-123-74-43" EMailID="bush@government.com" FirstName="George" LastName="Bush" MobilePhone="+1-800-111-22-33" State="Washington" ZipCode="454323"/>
+    <PersonInfoShipTo AddressLine1="Tom" AddressLine2="The Cat" AddressLine3="Cartoon line 23" AddressLine4="" City="Disnayland" Country="France" DayPhone="+54-3452-234523" EMailID="" FirstName="tom@thecat.fr" LastName="Tom" Latitude="" Longitude="" MobilePhone="+65-2345432534" State="" ZipCode="2345234"/>
+    <HeaderCharges>
+        <HeaderCharge ChargeAmount="35" ChargeCategory="SHIPPING" ChargeName="SHIPPING_CHARGE"/>
+    </HeaderCharges>
+</Order>
